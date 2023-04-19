@@ -44,6 +44,9 @@
   grid-template-columns: repeat(4, minmax(25%, auto));
   width: var(--max-width);
   max-width: 100%;
+  position: absolute;
+  left: 100px;
+  top: 650px;
 }
 
 .card {
@@ -226,4 +229,24 @@
   to {
     transform: rotate(0deg);
   }
+}
+
+.tableStyle th {
+  
+  border: 1px solid;
+  border-color: antiquewhite;
+}
+
+.tableStyle td {
+  
+  border: 1px solid;
+  border-color: antiquewhite;
+  padding: 10;
+  
+}
+
+.tableStyle {
+  position: fixed ;
+  top: 200px;
+  left: 360px;
 }
