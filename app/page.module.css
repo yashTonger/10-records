@@ -40,13 +40,8 @@
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
-  width: var(--max-width);
-  max-width: 100%;
-  position: absolute;
-  left: 100px;
-  top: 650px;
+  display: block;
+  position: relative;
 }
 
 .card {
@@ -107,9 +102,7 @@
   transform: translateZ(0);
 }
 
-.logo {
-  position: relative;
-}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
@@ -212,16 +205,6 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
-  }
-
-  .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
-  }
-}
-
 @keyframes rotate {
   from {
     transform: rotate(360deg);
@@ -246,7 +229,6 @@
 }
 
 .tableStyle {
-  position: fixed ;
-  top: 200px;
-  left: 360px;
+  border-collapse: collapse;
+  width: 100%;
 }
